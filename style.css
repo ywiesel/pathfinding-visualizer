@@ -1,0 +1,55 @@
+body {
+  font-family: sans-serif;
+  text-align: center;
+  background: #f9f9f9;
+}
+
+header {
+  margin: 1rem 0;
+}
+
+.controls {
+  margin: 1rem 0;
+}
+
+button {
+  margin: 0 0.5rem;
+  padding: 0.5rem 1rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+#grid-container {
+  display: grid;
+  grid-template-columns: repeat(10, 40px);
+  grid-gap: 2px;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+.cell {
+  width: 40px;
+  height: 40px;
+  background: white;
+  border: 1px solid #ccc;
+}
+
+.cell.wall {
+  background: black;
+}
+
+.cell.start {
+  background: green;
+}
+
+.cell.goal {
+  background: red;
+}
+
+.cell.visited {
+  background: #87ceeb;
+}
+
+.cell.path {
+  background: yellow;
+}
